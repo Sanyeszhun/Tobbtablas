@@ -14,7 +14,7 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Model
 
         public Item(int orderId, int pizzaId, int piece)
         {
-            this.orderId = orderId;
+            this.orderId = orderIÍD;
             this.pizzaId = pizzaId;
             this.piece = piece;
         }
