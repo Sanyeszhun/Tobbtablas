@@ -10,3 +10,14 @@ C:\Users\sz8szisan\Downloads\TobbformosPizza\TobbformosMvcPizzaTobbTabla\bin\Deb
 C:\Users\sz8szisan\Downloads\TobbformosPizza\TobbformosMvcPizzaTobbTabla\obj\Debug\TobbformosMvcPizzaTobbTabla.csproj.CopyComplete
 C:\Users\sz8szisan\Downloads\TobbformosPizza\TobbformosMvcPizzaTobbTabla\obj\Debug\TobbbformosPizzaAlkalmazasTobbTabla.exe
 C:\Users\sz8szisan\Downloads\TobbformosPizza\TobbformosMvcPizzaTobbTabla\obj\Debug\TobbbformosPizzaAlkalmazasTobbTabla.pdb
+C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTabla\bin\Debug\TobbbformosPizzaAlkalmazasTobbTabla.exe.config
+C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTabla\bin\Debug\TobbbformosPizzaAlkalmazasTobbTabla.exe
+C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTabla\bin\Debug\TobbbformosPizzaAlkalmazasTobbTabla.pdb
+C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTabla\bin\Debug\MySql.Data.xml
+C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTabla\obj\Debug\TobbformosMvcPizzaTobbTabla.csprojAssemblyReference.cache
+C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTabla\obj\Debug\TobbbformosPizzaAlkalmazasTobbTabla.Properties.Resources.resources
+C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTabla\obj\Debug\TobbformosMvcPizzaTobbTabla.csproj.GenerateResource.cache
+C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTabla\obj\Debug\TobbformosMvcPizzaTobbTabla.csproj.CoreCompileInputs.cache
+C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTabla\obj\Debug\TobbformosMvcPizzaTobbTabla.csproj.CopyComplete
+C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTabla\obj\Debug\TobbbformosPizzaAlkalmazasTobbTabla.exe
+C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTabla\obj\Debug\TobbbformosPizzaAlkalmazasTobbTabla.pdb

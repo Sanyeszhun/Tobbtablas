@@ -44,8 +44,14 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Repository
                                 goodResult = double.TryParse(dr["ido"].ToString(), out ido);
                                 if (goodResult)
                                 {
-
-                                    Order o = new Order(razon, vazon, fazon, datum, ido);
+                                    bool teljestive = false;
+                                    int teljesitveInt;
+                                    goodResult = int.TryParse(dr["teljesites"].ToString(), out teljesitveInt);
+                                    if (teljesitveInt == 1)
+                                    {
+                                        teljestive = true;
+                                    }
+                                    Order o = new Order(razon, vazon, fazon, datum, ido, teljestive);
                                     orders.Add(o);
                                 }
                             }
