@@ -33,7 +33,7 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Repository
             pizzaDT.Columns.Add("fazon", typeof(int));
             pizzaDT.Columns.Add("datum", typeof(string));
             pizzaDT.Columns.Add("ido", typeof(double));
-            pizzaDT.Columns.Add("teljesitve", typeof(string));
+            pizzaDT.Columns.Add("teljesites", typeof(string));
             foreach (Order o in orders)
             {if(o.getDone())
                 pizzaDT.Rows.Add(o.getOrderId(), o.getCustomerId(), o.getCourierId(), o.getDate(), o.getTime(), "teljesitve");

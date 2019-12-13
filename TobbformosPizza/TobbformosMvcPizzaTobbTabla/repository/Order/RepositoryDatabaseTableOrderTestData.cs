@@ -23,7 +23,7 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Repository
                 string query =
                     "INSERT INTO `prendeles` (`razon`, `vazon`, `fazon`, `datum`, `ido`,`teljesites`) VALUES " +
                             "(1, 4, 2, '2010-10-01', 13.15,1), " +
-                            "(2, 7, 2, '2010-10-01', 14.17.0), " +
+                            "(2, 7, 2, '2010-10-01', 14.17,0), " +
                             "(3, 1, 1, '2010-10-02', 11.07,0), " +
                             "(4, 5, 2, '2010-10-02', 14.55,1), " +
                             "(5, 2, 3, '2010-10-02', 15.27,1), " +
