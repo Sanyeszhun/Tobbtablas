@@ -12,7 +12,8 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Repository
     partial class Repository
     {
         List<Customer> customers;
-        public List<Customer> getCustomerk()
+        
+        public List<Customer> getCustomers()
         {
             return customers;
         }
@@ -20,6 +21,20 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Repository
         {
             this.customers = cusomers;
         }
+        public List<string> getCustomersName()
+        {
+            List<string> customersName = new List<string>();
+            foreach (Customer customer in customers)
+            {
+                customersName.Add(customer.getName());
+
+
+            }
+
+            return customersName;
+        }
+
+
         public DataTable CustomerListToDataTable()
         {
             DataTable dt = new DataTable();
