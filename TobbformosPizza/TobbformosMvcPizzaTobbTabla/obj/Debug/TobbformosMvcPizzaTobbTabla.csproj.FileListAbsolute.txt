@@ -22,3 +22,4 @@ C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTa
 C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTabla\obj\Debug\TobbbformosPizzaAlkalmazasTobbTabla.exe
 C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTabla\obj\Debug\TobbbformosPizzaAlkalmazasTobbTabla.pdb
 C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTabla\obj\Debug\TobbformosMvcPizzaTobbTabla.FormPizzaFutarKft.resources
+C:\Users\sz8szisan\Downloads\Tobbtablas\TobbformosPizza\TobbformosMvcPizzaTobbTabla\bin\Debug\MySql.Data.dll
