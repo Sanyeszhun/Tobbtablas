@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using TobbbformosPizzaAlkalmazasTobbTabla.Model;
 using TobbbformosPizzaAlkalmazasTobbTabla.Repository;
 
 namespace TobbformosMvcPizzaTobbTabla
@@ -41,6 +41,30 @@ namespace TobbformosMvcPizzaTobbTabla
             labelTetelek.Visible = false;
 
         }
-       
+        private void comboBoxMegrendelok_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBoxMegrendelok.SelectedIndex < 0)
+            {
+                return;
+            }
+            listViewRendelesek.Visible = true;
+
+            string megrendeloNev = comboBoxMegrendelok.Text;
+            feltoltListViewAdatokkal(megrendeloNev);
+
+        }
+
+        private void feltoltListViewAdatokkal(string megrendeloNev)
+        {
+            List<Order> megrendelok=repo.getOrders(megrendeloNev);
+
+            foreach (Order megrendelo in megrendelok)
+            {
+                ListViewItem lvi = new ListViewItem();
+
+                listViewRendelesek.
+
+            }
+        }
     }
 }

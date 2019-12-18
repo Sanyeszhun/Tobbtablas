@@ -44,5 +44,11 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Repository
             return pizzaDT;
         }
 
+        public List<Order> getOrders(string customerName)
+        {
+            int customerId = customers.Find(x =>x.getName() == customerName).getID();
+            return orders.FindAll(x => x.getCustomerId() == customerId);
+        }
+
     }
 }
