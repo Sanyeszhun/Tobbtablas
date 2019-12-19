@@ -15,6 +15,7 @@ namespace TobbformosMvcPizzaTobbTabla
     public partial class FormPizzaFutarKft : Form
         
     {
+        private bool nincsenekListViewOszlopok= true;
 
 
         private void tabPageSzamlak_Click(object sender, EventArgs e)
@@ -35,6 +36,16 @@ namespace TobbformosMvcPizzaTobbTabla
 
         private void beallitSzamlakTabPagetIndulaskor()
         {
+            
+            listViewRendelesek.GridLines = true;
+            listViewRendelesek.View = View.Details;
+            listViewRendelesek.Columns.Add("Azonosító");
+            listViewRendelesek.Columns.Add("Futár");
+            listViewRendelesek.Columns.Add("Megrendelő");
+            listViewRendelesek.Columns.Add("Dátum");
+            listViewRendelesek.Columns.Add("idő");
+            listViewRendelesek.Columns.Add("Teljesités");
+            nincsenekListViewOszlopok = false;
             listViewRendelesek.Visible = false;
             labelRendelesek.Visible = false;
             dataGridViewTetelek.Visible = false;
@@ -56,13 +67,19 @@ namespace TobbformosMvcPizzaTobbTabla
 
         private void feltoltListViewAdatokkal(string megrendeloNev)
         {
-            List<Order> megrendelok=repo.getOrders(megrendeloNev);
+            List<Order> megrendelesek=repo.getOrders(megrendeloNev);
+            listViewRendelesek.Items.Clear();
 
-            foreach (Order megrendelo in megrendelok)
+            foreach (Order megrendeles in megrendelesek)
             {
-                ListViewItem lvi = new ListViewItem();
+                ListViewItem lvi = new ListViewItem(megrendeles.getOrderId().ToString());
+                lvi.SubItems.Add(megrendeles.getCourierId().ToString());
+                lvi.SubItems.Add(megrendeles.getCustomerId().ToString());
+                lvi.SubItems.Add(megrendeles.getDate().ToString());
+                lvi.SubItems.Add(megrendeles.getTime().ToString());
+                lvi.SubItems.Add(megrendeles.getDone().ToString());
 
-                listViewRendelesek.
+                listViewRendelesek.Items.Add(lvi);
 
             }
         }
