@@ -53,7 +53,7 @@ namespace TobbformosMvcPizzaTobbTabla
             labelTetelek.Visible = false;
             listViewRendelesek.Columns[1].TextAlign = HorizontalAlignment.Right;
             listViewRendelesek.Columns[2].TextAlign = HorizontalAlignment.Right;
-            listViewRendelesek.Columns[3].TextAlign = HorizontalAlignment.Right;
+            listViewRendelesek.Columns[3].TextAlign = HorizontalAlignment.Righ;
 
         }
         private void comboBoxMegrendelok_SelectedIndexChanged(object sender, EventArgs e)
