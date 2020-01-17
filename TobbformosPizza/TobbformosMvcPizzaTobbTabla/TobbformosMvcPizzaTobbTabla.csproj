@@ -75,8 +75,10 @@
     <Compile Include="model\ItemDatabase.cs" />
     <Compile Include="model\OrderDatabase.cs" />
     <Compile Include="model\Order.cs" />
+    <Compile Include="model\OrderItmesView.cs" />
     <Compile Include="model\Pizza.cs" />
     <Compile Include="model\PizzaDatabase.cs" />
+    <Compile Include="OrderItemsView\RepositoryOrderitemsView.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repository\Courier\RepositoryCurier.cs" />

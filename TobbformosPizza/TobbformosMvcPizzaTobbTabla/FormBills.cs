@@ -53,12 +53,15 @@ namespace TobbformosMvcPizzaTobbTabla
             labelTetelek.Visible = false;
             listViewRendelesek.Columns[1].TextAlign = HorizontalAlignment.Right;
             listViewRendelesek.Columns[2].TextAlign = HorizontalAlignment.Right;
-            listViewRendelesek.Columns[3].TextAlign = HorizontalAlignment.Righ;
+            listViewRendelesek.Columns[3].TextAlign = HorizontalAlignment.Right;
+            listViewRendelesek.Columns[5].TextAlign = HorizontalAlignment.Right;
 
         }
         private void comboBoxMegrendelok_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(comboBoxMegrendelok.SelectedIndex < 0)
+            dataGridViewTetelek.Visible = false;
+            labelTetelek.Visible = false;
+            if (comboBoxMegrendelok.SelectedIndex < 0)
             {
                 return;
             }
@@ -80,14 +83,50 @@ namespace TobbformosMvcPizzaTobbTabla
                 lvi.SubItems.Add(megrendeles.getCourierId().ToString());
                 lvi.SubItems.Add(megrendeles.getCustomerId().ToString());
                 lvi.SubItems.Add(megrendeles.getDate().Substring(0,13).ToString());
-                lvi.SubItems.Add(megrendeles.getTime().ToString().Replace(',',':'));
-                lvi.SubItems.Add(megrendeles.getDone().ToString());
+                lvi.SubItems.Add(megrendeles.getTime().ToString().Replace(',',':'));              
+                if (megrendeles.getDone())
+                {
+                  lvi.SubItems.Add("Teljesítve").ToString();
+                }
+                else
+                {
+                    lvi.SubItems.Add("Nem Teljesítve").ToString();
+                   
+                }
 
                 listViewRendelesek.Items.Add(lvi);
 
 
             }
+            listViewRendelesek.AutoResizeColumn(0, ColumnHeaderAutoResizeStyle.HeaderSize);
+            listViewRendelesek.AutoResizeColumn(1, ColumnHeaderAutoResizeStyle.HeaderSize);
+            listViewRendelesek.AutoResizeColumn(2, ColumnHeaderAutoResizeStyle.HeaderSize);
             listViewRendelesek.AutoResizeColumn(3, ColumnHeaderAutoResizeStyle.ColumnContent);
+            listViewRendelesek.AutoResizeColumn(5, ColumnHeaderAutoResizeStyle.ColumnContent);
+            
         }
+
+
+        private void listViewRendelesek_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listViewRendelesek.SelectedItems.Count == 1)
+            {
+                dataGridViewTetelek.Visible = true;
+                labelTetelek.Visible = true;
+
+
+            }
+            else
+            {
+
+                dataGridViewTetelek.Visible = false;
+                labelTetelek.Visible =false;
+
+
+            }
+        }
+
+
+
     }
 }

@@ -283,7 +283,6 @@
             this.tabControlPizzaFutarKFT.Size = new System.Drawing.Size(1008, 649);
             this.tabControlPizzaFutarKFT.TabIndex = 3;
             this.tabControlPizzaFutarKFT.TabStop = false;
-            this.tabControlPizzaFutarKFT.SelectedIndexChanged += new System.EventHandler(this.tabControlPizzaFutarKFT_SelectedIndexChanged);
             this.tabControlPizzaFutarKFT.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControlPizzaFutarKFT_Selected);
             // 
             // tabPagePizzak
@@ -524,6 +523,7 @@
             this.listViewRendelesek.Size = new System.Drawing.Size(446, 418);
             this.listViewRendelesek.TabIndex = 2;
             this.listViewRendelesek.UseCompatibleStateImageBehavior = false;
+            this.listViewRendelesek.SelectedIndexChanged += new System.EventHandler(this.listViewRendelesek_SelectedIndexChanged);
             // 
             // comboBoxMegrendelok
             // 

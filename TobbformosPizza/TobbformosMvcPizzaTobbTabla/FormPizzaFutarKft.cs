@@ -50,11 +50,6 @@ namespace TobbformosMvcPizzaTobbTabla
             tabControlPizzaFutarKFT.SelectTab("tabPageSzamlak");
         }
 
-        private void tabControlPizzaFutarKFT_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         
     }
 }
